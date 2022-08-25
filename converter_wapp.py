@@ -11,16 +11,15 @@ def webpage():
         enter = float(request.form['in'])
         conv = Conversion(enter)
 
-        print(request.form['operation'])
-
         check = request.form['operation']
-        output, ffocus, kfocus, rfocus, f, k, r = None, None, None, None, None, None, None
-
+        output = None
         options = {'f': 0, 'k': 1, 'r': 2}
 
-        out = ([f, ffocus, conv.c_f(enter)],
-             [k ,kfocus, conv.c_k(enter)],
-             [r, rfocus, conv.c_r(enter)])
+        out = (
+            [None, None, conv.c_f(enter)],
+            [None, None, conv.c_k(enter)],
+            [None, None, conv.c_r(enter)]
+        )
 
         for x in options.keys():
             if x == check:
