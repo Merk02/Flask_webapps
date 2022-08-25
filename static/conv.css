@@ -1,0 +1,81 @@
+div.container {
+  width: auto;
+  margin: auto;
+  background-color: #ddddff;
+}
+
+
+div {
+  background-color: #eeeeff;
+  border: 1px solid purple;
+  width: 300px;
+  margin: 70px auto;
+  padding: 25px;
+}
+
+#choose {
+  margin-left: 50px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.unit {
+  margin-left: 30px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 12.5px;
+}
+
+label {
+  margin-left: 70px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.choice {
+  margin-left: 35px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+input[type=radio] {
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  padding-left: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 48px;
+}
+
+input[type=text] {
+  padding-right: 0px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+
+
+
+fieldset {
+  border: 1px solid steelblue;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+legend {
+  border-radius: 15px;
+  background-color: #ccddff;
+  font-family: Times New Romans ;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ee0000;
+  margin: 50px auto;
+  padding: 30px auto;
+}

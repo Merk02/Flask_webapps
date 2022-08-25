@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Converter
+    </title>
+    <link rel="stylesheet" href="../static/conv.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <fieldset>
+                <legend>&nbsp;TEMPERATURE&nbsp;&nbsp;CONVERTER&nbsp;</legend>
+                <form method="post">
+                    <label id="enter" for="in"><strong>Enter value in °C:</strong></label>
+                    <input type="number" id="in" name="in" value="{{enter}}"><br><br><br>
+
+                    <label id="choose"><strong>Unit of measurement:</strong></label><br><br>
+
+                    <label class="unit">Fahrenheit</label>
+                    <label class="unit">Kelvin</label>
+                    <label class="unit">Rankine</label><br>
+                    <label class="choice" for="f">°F</label>
+                    <input type="radio" id="f" name="operation" value="f" onclick="submit()" {{f}} {{ffocus}}>
+
+                    <label class="choice" for="k">K</label>
+                    <input type="radio" id="k" name="operation" value="k" onclick="submit()" {{k}} {{kfocus}}>
+
+                    <label class="choice" for="r">R</label>
+                    <input type="radio" id="r" name="operation" value="r" onclick="submit()" {{r}} {{rfocus}}><br>
+
+                    <input type="text" name="out" value="{{output}}"><br>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
